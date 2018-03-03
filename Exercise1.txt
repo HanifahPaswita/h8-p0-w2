@@ -1,0 +1,34 @@
+1.  BEGIN
+        STORE "massa benda" with 600
+        STORE "percepatan benda" with 2
+        CALCULATE "Resultan Gaya" = massa benda*percepatan benda
+        DISPLAY "Resultan Gaya"
+    END
+
+2.  BEGIN
+        IF (tahun mod 4=0)&(tahun mod 100=1) THEN
+            ELSE IF(tahun mod 4=0)&(tahun mod 100=0)&(tahun mod 400=0) THEN
+                DISPLAY" Tahun Kabisat"
+                ELSE
+                DISPLAY" Bukan Tahun Kabisat"
+            END IF
+        END IF
+    END
+
+3.  BEGIN
+        set awal baju=1
+        WHILE baju<=20 DO
+            DISPLAY" masukan baju ke mesin cuci"
+        END WHILE
+    END
+
+4.  BEGIN
+        set awal siswa=1
+        WHILE siswa <=40 DO
+            IF "kuku siswa panjang" THEN
+                DISPLAY"dihukum"
+                ELSE
+                DISPLAY"dipuji"
+            END IF
+        END WHILE
+    END
